@@ -6,7 +6,7 @@ import de.hs_emden_leer.model.Point;
 import java.util.ArrayList;
 
 /**
- * This class servers some utils to assign (data-)points to clusters, to center clusters in the middle of their partition
+ * This class serves some utils to assign (data-)points to clusters, to center clusters in the middle of their partition
  * and check if a cluster have a (data-)point.
  *
  * @author Sven Wiemers
