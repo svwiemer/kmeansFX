@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hs_emden_leer.controller.DiagramBorderPaneController">
+   <top>
+      <HBox prefHeight="45.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="k = ">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="200.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="kValueSpinner" editable="true" prefHeight="25.0" prefWidth="52.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+            </Spinner>
+            <Button fx:id="startResetButton" mnemonicParsing="false" text="Start/Reset">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10" right="5.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="centerStepClustersButton" mnemonicParsing="false" text="Center Clusters (step)">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="0" right="5.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="centerClustersButton" mnemonicParsing="false" text="Center Clusters">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="0" right="5.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <Canvas fx:id="diagramCanvas" height="800.0" width="800.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
